@@ -5,8 +5,8 @@ import LogoComponent from '../subComponents/LogoComponent'
 import SocialIcons  from '../subComponents/SocialIcons'
 import PowerButton  from '../subComponents/PowerButton'
 
-import {Blogs} from '../data/BlogData';
-import BlogComponent from './BlogComponent'
+// import {Blogs} from '../data/BlogData';
+// import BlogComponent from './BlogComponent'
 import AnchorComponent from '../subComponents/Anchor'
 import BigTitle from "../subComponents/BigTitlte"
 import { motion } from 'framer-motion'
@@ -35,11 +35,11 @@ align-items: center;
 padding-top: 10rem;
 `
 
-const Grid = styled.div`
-display: grid;
-grid-template-columns: repeat(2, minmax(calc(10rem + 15vw), 1fr));
-grid-gap: calc(1rem + 2vw);
-`
+// const Grid = styled.div`
+// display: grid;
+// grid-template-columns: repeat(2, minmax(calc(10rem + 15vw), 1fr));
+// grid-gap: calc(1rem + 2vw);
+// `
 
 // Framer-motion config
 const container = {
@@ -81,14 +81,14 @@ const BlogPage = () => {
                 <SocialIcons />
                 <AnchorComponent number={numbers}/>
 <Center>
-<Grid>
+{/* <Grid>
 
 {
     Blogs.map(blog => {
         return <BlogComponent key={blog.id} blog={blog} />
     })
 }
-</Grid>
+</Grid> */}
 
 </Center>
 <BigTitle text="BLOG" top="5rem" left="5rem" />
